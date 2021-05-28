@@ -1,7 +1,7 @@
 ﻿
 namespace lab4
 {
-    partial class Form1
+    partial class MENU
     {
         /// <summary>
         /// Required designer variable.
