@@ -69,7 +69,9 @@ namespace lab4
                 HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
                 doc.Load(page.OpenRead(URLBar.Text),Encoding.UTF8);
                 var arr = doc.DocumentNode.SelectNodes("//*");
-                WebClient downloader = new WebClient();
+
+                List<string> ListURLToDownload = new List<string>();
+
                 foreach(var i in arr)
                 {
                     string link = "";
@@ -87,14 +89,14 @@ namespace lab4
                         {
                             link = URLBar.Text + link;
                         }
-                        string filename = Path.GetFileName(new Uri(link).AbsolutePath);
-                        downloader.DownloadFile(link, fbd.SelectedPath + "/" + filename);
+                        ListURLToDownload.Add(link);
                         
                     }
                 }
+                // Start to download
+                Downloader Dwn = new Downloader(ListURLToDownload, fbd.SelectedPath);
 
             }
-
 
             //byte[] bytes_response = Encoding.UTF8.GetBytes(response);
         }
@@ -117,7 +119,8 @@ namespace lab4
             if (!string.IsNullOrEmpty(URLBar.Text))
             {
                 string response = getHTML(URLBar.Text);
-                MessageBox.Show(response);
+                SourceHTMLShow gui = new SourceHTMLShow(response);
+                gui.Show();
             }
         }
 

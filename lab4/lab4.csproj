@@ -73,6 +73,12 @@
     <Compile Include="bai4.Designer.cs">
       <DependentUpon>bai4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Downloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Downloader.Designer.cs">
+      <DependentUpon>Downloader.cs</DependentUpon>
+    </Compile>
     <Compile Include="MENU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="bai4.resx">
       <DependentUpon>bai4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Downloader.resx">
+      <DependentUpon>Downloader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MENU.resx">
       <DependentUpon>MENU.cs</DependentUpon>

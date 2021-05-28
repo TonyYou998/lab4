@@ -29,17 +29,18 @@ namespace lab4
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.src_txt = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // src_txt
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 58);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1127, 519);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.src_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.src_txt.Location = new System.Drawing.Point(12, 58);
+            this.src_txt.Name = "src_txt";
+            this.src_txt.Size = new System.Drawing.Size(1255, 677);
+            this.src_txt.TabIndex = 0;
+            this.src_txt.Text = "";
             // 
             // label1
             // 
@@ -55,9 +56,9 @@ namespace lab4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 590);
+            this.ClientSize = new System.Drawing.Size(1279, 747);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.src_txt);
             this.Name = "SourceHTMLShow";
             this.Text = "SourceHTMLShow";
             this.ResumeLayout(false);
@@ -67,7 +68,7 @@ namespace lab4
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox src_txt;
         private System.Windows.Forms.Label label1;
     }
 }

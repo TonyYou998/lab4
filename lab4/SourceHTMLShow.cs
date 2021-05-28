@@ -16,5 +16,10 @@ namespace lab4
         {
             InitializeComponent();
         }
+
+        public SourceHTMLShow(string response) : this()
+        {
+            src_txt.Text = response;
+        }
     }
 }
