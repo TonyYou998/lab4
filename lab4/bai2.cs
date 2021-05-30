@@ -67,7 +67,7 @@ namespace lab4
             }
             catch
             {
-                htmlRes.Text = URLBar.Text + " not found";
+                MessageBox.Show("page not found");
             }
            
         }
