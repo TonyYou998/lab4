@@ -95,6 +95,7 @@ namespace lab4
             this.URLBar.TabIndex = 3;
             this.URLBar.Text = "http://google.com";
             this.URLBar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.URLBar.TextChanged += new System.EventHandler(this.URLBar_TextChanged);
             this.URLBar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.urlbar_enter);
             // 
             // DownloadBtn
@@ -127,7 +128,8 @@ namespace lab4
             this.WebBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.WebBrowser.Name = "WebBrowser";
             this.WebBrowser.Size = new System.Drawing.Size(1366, 702);
-            this.WebBrowser.TabIndex = 1;            // 
+            this.WebBrowser.TabIndex = 1;
+            // 
             // bai4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

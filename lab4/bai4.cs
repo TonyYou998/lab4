@@ -137,5 +137,10 @@ namespace lab4
             else
                 MessageBox.Show("URL không hợp lệ, URL phải bắt đầu bằng http hoặc https !");
         }
+
+        private void URLBar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

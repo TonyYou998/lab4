@@ -93,6 +93,12 @@
     <Compile Include="SourceHTMLShow.Designer.cs">
       <DependentUpon>SourceHTMLShow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bai1.resx">
+      <DependentUpon>bai1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bai2.resx">
+      <DependentUpon>bai2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bai4.resx">
       <DependentUpon>bai4.cs</DependentUpon>
     </EmbeddedResource>
